@@ -1,0 +1,397 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;    
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+i{
+    color:#2fccd0;
+}
+/* ****actual css classes used******* */
+.header{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(107, 107, 107, 0.3),rgba(107, 107, 107, 0.3)),url(images/a.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+clip-path: polygon(100% 0%,100% 75%,50% 100% ,0 75%, 0 0);
+position:relative;
+
+}
+.header:before{
+    content:"";
+    position: absolute;
+    top:0%;
+    bottom: 0%;
+    left: 0;
+    right:0;
+    opacity: 0.2;
+    z-index: -1;
+    background: linear-gradient(to right,#1e5799 0%, #3ccdbb 0%,#16c9F6 100%);
+}
+
+.navbar:before{
+    content:"";
+    position: absolute;
+    top:0%;
+    bottom: 0%;
+    left: 0;
+    right:0;
+    opacity: 0.2;
+    z-index: -1;
+    background: linear-gradient(to right,#1e5799 0%, #3ccdbb 0%,#16c9F6 100%);
+}
+
+.nav-item a{
+    color: #fff;
+    font-weight: bold;
+
+}
+.gt-heading{
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.header-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+/* .header-section{
+    width: 100%;
+    height: inherit;
+    color:white;
+    text-align: center;
+    position: relative;
+} */
+
+
+
+
+.first-heading{
+    color:white;
+    text-transform: uppercase;
+} 
+.heading-center p{
+    color: floralwhite;
+    text-align: center;
+
+}
+
+.header-button a{
+
+    border:1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+    margin:0px 5px;
+    padding: 12px 35px;
+    outline:none;
+    font-weight: 380;
+    text-align: center;
+
+}
+.header-button a:hover{
+    color: black;
+    text-decoration: none;
+    background: #fff;
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+
+}
+
+
+.header-card{
+    width:100%;
+    height:auto;
+    margin:100px 0;
+    text-align: center;
+}
+
+.cards{
+
+    background: #ffff;
+    padding: 40px !important;
+    border:medium none;
+    transition: 0.3s;
+    border-radius: 100px;
+}
+
+.cards:hover{
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+
+}
+
+/* *****css for offer-section****** */
+.offer{
+    background: #ededed;
+    padding:50px 0;
+    margin-bottom: 50px;
+}
+
+.heading{
+    margin-bottom: 5opx;
+}
+.heading h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.names-of-offers{
+    margin: 15px auto;
+}
+.names-of-offers h2{
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+
+.offer-icons{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.side-offers{
+    margin:12px auto;
+}
+
+
+/* ****project-done css************ */
+.project{
+    height: auto;
+    width: 100%;
+    height:auto;
+    padding:50px auto;
+}
+.project-div{
+    margin:60px auto;
+}
+
+.project-div h2{
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+}
+
+.project-num{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+/* our pricing  */
+.our-pricing{
+    width:100%;
+    height: 100vh;
+    
+    padding: 50px 0;
+    position: relative;
+    
+}
+.our-pricing:before{
+    content:"";
+    position: absolute;
+    top:0%;
+    bottom: 0%;
+    left: 0;
+    right:0;
+   z-index:-1;
+    
+    background: linear-gradient(160deg,#777777 55%, #fff 0% );
+
+}
+.pricing-div{
+    text-align: center;
+    
+}
+.pricing-div h2{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.pricing-card{
+    margin:45px auto;
+}
+.card-button a{
+    border:1px solid #50d1c0;
+    border-radius: 100px;
+    color: #50d1c0;
+    margin:0px 5px;
+    padding: 12px 35px;
+    outline:none;
+    font-weight: 380;
+    text-align: center;
+}
+.card-button a:hover{
+    color: black;
+    text-decoration: none;
+    background: #50d1c0;
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+
+}
+.card{
+    border-radius: 20px !important;
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+
+/* ***our pricing ends *** */
+/* *******students-feedback start here*********** */
+.student-feedback{
+    width:100%;
+    height:auto;
+    padding:60px 0;
+}
+.box{
+    border:1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    transition:0.3 ease;
+    border-radius:3px;
+}
+.carousel-indicators{
+    position:absolute;
+   right: 0;
+    bottom:-60px!important; 
+
+}
+.carousel-indicators li{
+    background-color: salmon!important;
+}
+.box a img{
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+}
+.box a:after{
+    content:"\f10d";
+    font-family: FontAwesome;
+    width:40px;
+}
+
+
+/*******contact-us*************  */
+
+.contact-us{
+  width:100%;
+  height:100vh;
+  padding: 70px 0;
+  position: relative;
+
+
+}
+.contact-us::before{
+    content: "";
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(330deg,#16c9F6 55%,#fff 0%);
+    z-index:-1;
+}
+
+.contact-button button{
+color: thistle !important;
+cursor: pointer;
+outline: none;
+padding: 12px 35px;
+font-size: 17px;
+border-radius: 8px;
+background: none;
+font-weight: bold;
+}
+.contact-button button:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/* ****news-letter css******* */
+
+.newsletter{
+    width:100%;
+    height: auto;
+    padding: 40px 0;
+
+}
+
+.news-input{
+    border-radius: 100px 0 0 100px !important;
+    min-width: 150px;
+    min-width:45px;
+}
+
+
+/* footer */
+.footer{
+    width:100%;
+    height:auto;
+    background-color:lightblue;
+    padding: 30px 0;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*  */
+#mybtn{
+    /* display:none; */
+    position: fixed;
+    bottom: 20px;
+    right: 45px;
+    z-index:99;
+    border:none;
+    color:white;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 15px;
+}
+#mybtn:hover{
+    background: lightsalmon
+}
+
+
+/* *********media queries******** */
+
+@media(max-width: 768px){
+    .nav-item{
+        text-align: center!important;
+    }
+    .our-pricing{
+        height: auto;
+        margin-top:40px 0;
+    }
+    .standard{
+        margin:17px;
+    }
+    
+    
+}
